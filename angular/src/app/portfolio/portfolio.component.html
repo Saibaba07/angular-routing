@@ -1,0 +1,74 @@
+<mat-card class="portfolio-container">
+  <!-- Header Section -->
+  <div class="header">
+    <h1>{{ name }}</h1>
+    <h3>{{ role }}</h3>
+    <p>{{ location }}</p>
+    <p class="contact">
+      <span>📞 {{ phone }}</span> | 
+      <span>✉️ {{ email }}</span>
+    </p>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <!-- Summary Section -->
+  <section>
+    <h2>Summary</h2>
+    <p>{{ summary }}</p>
+  </section>
+
+  <mat-divider></mat-divider>
+
+  <!-- Skills Section -->
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <span class="skill" *ngFor="let skill of skills">{{ skill }}</span>
+    </div>
+  </section>
+
+  <mat-divider></mat-divider>
+
+  <!-- Experience Section -->
+  <section>
+    <h2>Experience</h2>
+    <p><strong>{{ experience.position }}</strong> - {{ experience.company }}</p>
+    <p>{{ experience.duration }}</p>
+  </section>
+
+  <mat-divider></mat-divider>
+
+  <!-- Education Section -->
+  <section>
+    <h2>Education</h2>
+    <div class="education-container">
+      <div class="education-card" *ngFor="let edu of education">
+        <p><strong>{{ edu.degree }}</strong></p>
+        <p>{{ edu.institution }} ({{ edu.year }})</p>
+        <p *ngIf="edu.cgpa">CGPA: {{ edu.cgpa }}</p>
+        <p *ngIf="edu.percentage">Percentage: {{ edu.percentage }}</p>
+      </div>
+    </div>
+  </section>
+
+  <mat-divider></mat-divider>
+
+  <!-- Achievements Section -->
+  <section>
+    <h2>Achievements</h2>
+    <ul>
+      <li *ngFor="let achievement of achievements">{{ achievement }}</li>
+    </ul>
+  </section>
+
+  <mat-divider></mat-divider>
+
+  <!-- Languages Section -->
+  <section>
+    <h2>Languages</h2>
+    <ul class="languages">
+      <li *ngFor="let language of languages">{{ language }}</li>
+    </ul>
+  </section>
+</mat-card>

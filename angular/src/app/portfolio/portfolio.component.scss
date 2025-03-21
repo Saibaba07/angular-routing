@@ -1,0 +1,118 @@
+/* Global Styles */
+body {
+  background-color: #f4f7fc;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Portfolio Card */
+.portfolio-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.header h3 {
+  font-size: 18px;
+  color: #777;
+}
+
+.contact {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Sections */
+section {
+  padding: 15px 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Skills Section */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+/* Education Section */
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.education-card {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Achievements & Languages */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolio-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .skill {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}

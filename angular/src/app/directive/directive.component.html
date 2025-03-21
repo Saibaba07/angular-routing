@@ -1,0 +1,15 @@
+<div [ngClass]="{ 'active-class': isActive }">
+  This element is dynamically styled.
+
+
+<div *ngIf="isLoggedIn; else loggedOut">
+  Welcome back!
+</div>
+<ng-template #loggedOut>
+  Please log in.
+</ng-template>
+
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>  
+</div>
